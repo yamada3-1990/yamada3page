@@ -12,13 +12,13 @@ export default function App() {
     <Router>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/yamada3page">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/links">Links</Link></li>
         </ul>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/yamada3page" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/links" element={<Contact />} />
       </Routes>
