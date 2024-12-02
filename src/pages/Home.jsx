@@ -1,5 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import Spline from '@splinetool/react-spline';
+import './home.css';
 
 export default function Home() {
   return (

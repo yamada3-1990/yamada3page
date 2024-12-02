@@ -1,27 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css'; 
+import './App.css';
 
 // 各ページコンポーネントをインポート
 import Home from './pages/Home';
 import About from './pages/About';
-import Contact from './pages/Links';
+// import Contact from './pages/Links';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/yamada3page">
       <nav>
         <ul>
-          <li><Link to="/yamada3page">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/links">Links</Link></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About me</Link></li>
+          {/* <li><Link to="/links">Links</Link></li> */}
         </ul>
       </nav>
       <Routes>
-        <Route path="/yamada3page" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/links" element={<Contact />} />
+        {/* <Route path="/links" element={<Contact />} /> */}
       </Routes>
     </Router>
+
   );
 }

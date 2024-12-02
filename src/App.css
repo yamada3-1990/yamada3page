@@ -37,7 +37,8 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Splineシーンのコンテナ */
+/*----- Splineシーンのコンテナ -----*/
+/*
 .scene-container {
   position: relative;
   width: 100%;
@@ -51,7 +52,29 @@ nav ul li a:hover {
   display: block;
 }
 
-/* オーバーレイコンテンツ */
+
+@media (max-width: 768px) {
+  .scene-container {
+    height: 70vh; 
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scene-container {
+    height: 85vh; 
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .scene-container {
+    height: 100vh; 
+  }
+}
+*/
+
+/*----- オーバーレイコンテンツ -----*/
 .overlay {
   position: absolute;
   top: 50%;
