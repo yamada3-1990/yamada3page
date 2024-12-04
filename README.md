@@ -1,1 +1,1 @@
-# yamada3page　だよ
+# yamada3page　だよ:)
