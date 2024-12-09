@@ -12,26 +12,3 @@
     display: block;
 }
 
-/* スマートフォン向け */
-@media (max-width: 768px) {
-    .scene-container {
-        height: 70vh;
-        /* 高さを少し減らす */
-    }
-}
-
-/* タブレット向け */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .scene-container {
-        height: 85vh;
-        /* タブレット用の高さ */
-    }
-}
-
-/* デスクトップ向け */
-@media (min-width: 1025px) {
-    .scene-container {
-        height: 100vh;
-        /* デスクトップではフルスクリーン */
-    }
-}
