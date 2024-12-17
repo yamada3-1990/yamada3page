@@ -1,0 +1,60 @@
+/*----- オーバーレイコンテンツ -----*/
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* 半透明の背景 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.overlay p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+/*----- スキル部分 -----*/
+.skills-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* カード間の余白 */
+}
+
+.skill-item {
+    background-color: #f8d7da;
+    /* 可愛いピンク色 */
+    color: #6c757d;
+    /* テキストカラー */
+    padding: 8px 12px;
+    border-radius: 10px;
+    /* 角を丸める */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* 影を付ける */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    /* ホバーで浮くアニメーション */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
