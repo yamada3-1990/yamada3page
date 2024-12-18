@@ -11,7 +11,7 @@ export default function About() {
   const texts = {
     en: {
       title: 'About Page',
-      description: 'This is the about section. Learn more about our project!',
+      description: 'This is the about section.',
       name: 'Name:',
       skill: 'Skill:',
       skl1: 'python',
@@ -22,7 +22,7 @@ export default function About() {
     },
     ja: {
       title: '概要ページ',
-      description: 'これは概要セクションです。プロジェクトについて詳しく学びましょう！',
+      description: 'これは概要セクションです。',
       name: '名前:',
       skill: 'スキル:',
       skl1: 'python',
@@ -33,8 +33,8 @@ export default function About() {
     },
   };
 
-  texts.en.skills = ['python', 'blender', 'React', 'JavaScript', 'Spline', 'C', 'HTML/CSS', 'Processing', 'Java', 'GitHub', 'Go'];
-  texts.ja.skills = ['python', 'blender', 'React', 'JavaScript', 'Spline', 'C', 'HTML/CSS', 'Processing', 'Java', 'GitHub', 'Go'];
+  texts.en.skills = ['python', 'blender', 'React', 'JavaScript', 'Spline', 'C', 'HTML/CSS', 'Processing', 'Java', 'GitHub', 'Go', 'Vite'];
+  texts.ja.skills = ['python', 'blender', 'React', 'JavaScript', 'Spline', 'C', 'HTML/CSS', 'Processing', 'Java', 'GitHub', 'Go', 'Vite'];
 
   texts.en.qualifications = ['TOEIC 830', 'Hazardous Materials Engineer in Class B Group 4', 'EIKEN grade 2', 'FE(Fundamental Information Technology Engineer Examination)', 'GCI 2023 Summer'];
   texts.ja.qualifications = ['TOEIC 830', '危険物取扱者乙種第4類', '英検2級', '基本情報技術者試験', 'GCI 2023 Summer'];
@@ -43,9 +43,12 @@ export default function About() {
   const switchToEn = () => setLanguage('en');
 
   return (
-
-    <div className="scene-container">
-      <div className="overlay">
+    
+    <div className="container">
+      <br></br>
+      <br></br>
+      <br></br>
+      <div >
         <button onClick={switchToJa} disabled={language === 'ja'}>
           JA
         </button>
@@ -65,6 +68,7 @@ export default function About() {
           {texts[language].skills.map((skill, index) => (
             <li key={index} className="skill-item">{skill}</li>
           ))}
+          {/* <span className="skill-icons--blender-dark"></span> */}
         </ul>
       </div>
 
