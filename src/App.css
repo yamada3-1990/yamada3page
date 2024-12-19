@@ -11,7 +11,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* 背景色 */
   z-index: 1000; /* 他の要素より前面に表示 */
 }
 
@@ -34,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: white;
 }
 
 /*----- Splineシーンのコンテナ -----*/
