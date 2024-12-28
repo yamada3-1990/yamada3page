@@ -15,6 +15,7 @@ nav {
 }
 
 nav ul {
+  color: rgb(216, 216, 216);
   display: flex;
   justify-content: center;
   list-style: none;
@@ -33,7 +34,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 /*----- Splineシーンのコンテナ -----*/
