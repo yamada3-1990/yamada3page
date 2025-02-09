@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/pages/header.html") 
+    fetch("/header/index.html") 
         .then(response => response.text()) 
         .then(data => {
             document.getElementById("header-container").innerHTML = data; // 挿入
