@@ -1,0 +1,129 @@
+/* about.css */
+
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    color: #2A2A2E;
+}
+
+body {
+    top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    margin: 0;
+    background: #2D8A7B;
+    color: #2A2A2E;
+    display: grid;
+    grid-template-rows:
+        [header] min-content [main] auto [aside] auto [footer] auto [bottom];
+}
+
+.profile {
+    width: 90%;
+    max-width: 1500px;
+    margin: 2em auto;
+    padding: 1em 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile .topic {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.topic a {
+    color: #2A2A2E;
+    padding: 3px 6px;
+}
+
+.topic a:hover {
+    color: #bbc9c5;
+}
+
+.profile .theme {
+    margin: 2em 0;
+    padding: 0.25em 0.5em;
+    white-space: nowrap;
+    border-left: solid 5px #2D8A7B;
+    font-weight: bold;
+}
+
+.skill {
+    background: #E6F7F2;
+    color: #2A2A2E;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.icon img {
+    display: block;
+    height: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #2D8A7B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.icon p {
+    color: #2A2A2E;
+    line-height: 16px;
+}
+
+
+.icon-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2A2A2E;
+}
+
+
+
+
+
+
+
+/* レスポンシブ対応 小さいとき */
+@media screen and (max-width: 768px) {
+    .profile .topic {
+        flex-direction: row;
+        align-items: center;
+        display: grid;
+    }
+
+    .profile .theme {
+        margin: 2em 0;
+        padding: 0.5em 1em;
+        white-space: nowrap;
+    }
+
+    .icon {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
