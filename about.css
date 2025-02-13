@@ -1,4 +1,4 @@
-/* about.css */
+/* css/about.css */
 
 @charset "UTF-8";
 
@@ -8,7 +8,7 @@
 }
 
 body {
-    top: 100px;
+    /* top: 100px; */
     font-family: 'Noto Sans JP', sans-serif;
     position: relative;
     margin: 0;
@@ -38,6 +38,7 @@ body {
 .topic a {
     color: #2A2A2E;
     padding: 3px 6px;
+    text-decoration: none;
 }
 
 .topic a:hover {
