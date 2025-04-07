@@ -42,7 +42,8 @@ body {
 }
 
 .topic a:hover {
-    color: #bbc9c5;
+    color: #8b9793;
+    text-decoration: underline;
 }
 
 .profile .theme {
