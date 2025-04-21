@@ -1,0 +1,111 @@
+#timeline {
+    position: relative;
+    margin: 50px 0;
+    padding: 0 0 0 80px;
+    list-style: none;
+}
+
+#timeline::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+#timeline .work {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.radio {
+    display: none;
+}
+
+.radio:checked + .relative label {
+    text-decoration: underline;
+    color: #0a5f51;
+}
+
+.radio:checked + .relative .circle {
+    background: #2D8A7B;
+}
+
+.radio:checked ~ .content {
+    max-height: 500px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.relative {
+    position: relative;
+    width: calc(100% - 20px);
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.relative label {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.date {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.circle {
+    position: absolute;
+    left: -47px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c5c5c5;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+}
+
+.content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0 20px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content p {
+    margin: 0;
+    padding: 20px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #timeline {
+        padding-left: 60px;
+    }
+    
+    #timeline::before {
+        left: 30px;
+    }
+    
+    .circle {
+        left: -37px;
+    }
+}
