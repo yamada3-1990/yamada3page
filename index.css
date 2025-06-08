@@ -1,133 +1,238 @@
-/* css/about.css */
-
-@charset "UTF-8";
-
-* {
-    box-sizing: border-box;
-    color: #2A2A2E;
-}
-
 body {
-    /* top: 100px; */
     font-family: 'Noto Sans JP', sans-serif;
-    position: relative;
     margin: 0;
-    background: #2D8A7B;
-    color: #2A2A2E;
-    display: grid;
-    grid-template-rows:
-        [header] min-content [main] auto [aside] auto [footer] auto [bottom];
-}
-
-.profile {
-    width: 90%;
-    max-width: 1500px;
-    margin: 2em auto;
-    padding: 1em 20px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* .profile .topic {
+    background-color: #f0f0f0; /* 白に近い背景 */
+    color: #333; /* 黒に近い文字 */
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-} */
-
-.topic a {
-    color: #2A2A2E;
-    padding: 3px 6px;
-    text-decoration: underline;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.topic a:hover {
-    color: #8b9793;
-    text-decoration: underline;
-}
-
-.profile .theme {
-    margin: 2em 0;
-    padding: 0.25em 0.5em;
-    white-space: nowrap;
-    border-left: solid 5px #2D8A7B;
-    font-weight: bold;
-}
-
-.skill {
-    background: #E6F7F2;
-    color: #2A2A2E;
-    font-size: 0.9rem;
-    padding: 6px 12px;
-    display: inline-block;
-    white-space: nowrap;
-    border-radius: 4px;
-    margin-bottom: 6px;
-}
-
-.skill-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    flex-direction: row;
-}
-
-.icon img {
-    display: block;
-    height: 200px;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: #2D8A7B;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.icon img:hover {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.icon p {
-    color: #2A2A2E;
-    line-height: 16px;
-}
-
-
-.icon-name {
+h3 {
+    padding: 0;
+    margin: 0;
     font-size: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff; /* 白背景 */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333; /* 黒い枠線 */
+    margin-bottom: 15px;
+}
+
+.profile-header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: underline; /* 下線を追加 */
+    margin: 0 10px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #666;
+}
+
+.section {
+    background-color: #f8f8f8; /* 少し暗い白 */
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: #eee;
+    color: #333;
+    padding: 12px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #ddd;
+}
+
+.project-list, .timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* タイムラインリストのスタイル */
+.timeline-list {
+    position: relative;
+    padding-left: 20px; /* 垂直線のスペース */
+}
+
+.timeline-list li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 25px; /* 点のスペース */
+}
+
+.timeline-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* 垂直線 */
+.timeline-list::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc; /* 線の色 */
+}
+
+/* 各項目の点 */
+.timeline-list li::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #333; /* 点の色 */
+    border: 2px solid #fff; /* 点の周りの白い枠 */
+    z-index: 1;
+}
+
+.project-list a {
+    color: #333;
+    text-decoration: underline; /* 下線を追加 */
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    position: relative; /* 擬似要素のために必要 */
+    padding-right: 15px; /* 矢印アイコンのスペース */
+}
+
+.project-list a:hover {
+    color: #666;
+}
+
+.project-list p {
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+.timeline-list .timeline-date {
     font-weight: bold;
-    color: #2A2A2E;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-
-
-
-
-
-
-/* レスポンシブ対応 小さいとき */
-@media screen and (max-width: 768px) {
-    .profile .topic {
-        flex-direction: row;
-        align-items: center;
-        display: grid;
-    }
-
-    .profile .theme {
-        margin: 2em 0;
-        padding: 0.5em 1em;
-        white-space: nowrap;
-    }
-
-    .icon {
-        flex-direction: column;
-        gap: 30px;
-    }
+.timeline-list p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
 }
 
+.timeline-list .timeline-description {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+    line-height: 1.5;
+}
 
+.timeline-list .timeline-title {
+    font-weight: bold;/* 太字にする */
+    color: #333; 
+    font-size: 1.05em; 
+}
+
+.timeline-list a {
+    color: #333;
+    text-decoration: underline; 
+    font-weight: 700;
+    transition: color 0.3s ease;
+    position: relative; 
+    padding-right: 15px; 
+}
+
+.timeline-list a:hover {
+    color: #666;
+}
+
+/* リンクの横に矢印アイコンを追加 */
+.project-list a::after,
+.timeline-list a::after,
+.social-links a::after {
+    content: '→'; /* 矢印文字 */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.project-list a:hover::after,
+.timeline-list a:hover::after,
+.social-links a:hover::after {
+    opacity: 1;
+}
