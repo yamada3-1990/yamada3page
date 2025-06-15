@@ -1,8 +1,10 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
-    background-color: #f0f0f0; /* 白に近い背景 */
-    color: #333; /* 黒に近い文字 */
+    background-color: #f0f0f0;
+    /* 白に近い背景 */
+    color: #333;
+    /* 黒に近い文字 */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -20,7 +22,8 @@ h3 {
 .container {
     width: 100%;
     max-width: 800px;
-    background-color: #ffffff; /* 白背景 */
+    background-color: #ffffff;
+    /* 白背景 */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -39,7 +42,8 @@ h3 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #333; /* 黒い枠線 */
+    border: 3px solid #333;
+    /* 黒い枠線 */
     margin-bottom: 15px;
 }
 
@@ -51,7 +55,8 @@ h3 {
 
 .social-links a {
     color: #333;
-    text-decoration: underline; /* 下線を追加 */
+    text-decoration: underline;
+    /* 下線を追加 */
     margin: 0 10px;
     font-weight: 300;
     transition: color 0.3s ease;
@@ -62,7 +67,8 @@ h3 {
 }
 
 .section {
-    background-color: #f8f8f8; /* 少し暗い白 */
+    background-color: #f8f8f8;
+    /* 少し暗い白 */
     padding: 25px;
     border-radius: 6px;
     border: 1px solid #ddd;
@@ -97,7 +103,8 @@ h3 {
     background-color: #ddd;
 }
 
-.project-list, .timeline-list {
+.project-list,
+.timeline-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -118,13 +125,15 @@ h3 {
 /* タイムラインリストのスタイル */
 .timeline-list {
     position: relative;
-    padding-left: 20px; /* 垂直線のスペース */
+    padding-left: 20px;
+    /* 垂直線のスペース */
 }
 
 .timeline-list li {
     position: relative;
     margin-bottom: 20px;
-    padding-left: 25px; /* 点のスペース */
+    padding-left: 25px;
+    /* 点のスペース */
 }
 
 .timeline-list li:last-child {
@@ -139,7 +148,8 @@ h3 {
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #ccc; /* 線の色 */
+    background-color: #ccc;
+    /* 線の色 */
 }
 
 /* 各項目の点 */
@@ -151,19 +161,24 @@ h3 {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #333; /* 点の色 */
-    border: 2px solid #fff; /* 点の周りの白い枠 */
+    background-color: #333;
+    /* 点の色 */
+    border: 2px solid #fff;
+    /* 点の周りの白い枠 */
     z-index: 1;
 }
 
 .project-list a {
     color: #333;
-    text-decoration: underline; /* 下線を追加 */
+    text-decoration: underline;
+    /* 下線を追加 */
     font-weight: 700;
     font-size: 1.1em;
     transition: color 0.3s ease;
-    position: relative; /* 擬似要素のために必要 */
-    padding-right: 15px; /* 矢印アイコンのスペース */
+    position: relative;
+    /* 擬似要素のために必要 */
+    padding-right: 15px;
+    /* 矢印アイコンのスペース */
 }
 
 .project-list a:hover {
@@ -199,18 +214,19 @@ h3 {
 }
 
 .timeline-list .timeline-title {
-    font-weight: bold;/* 太字にする */
-    color: #333; 
-    font-size: 1.05em; 
+    font-weight: bold;
+    /* 太字にする */
+    color: #333;
+    font-size: 1.05em;
 }
 
 .timeline-list a {
     color: #333;
-    text-decoration: underline; 
+    text-decoration: underline;
     font-weight: 700;
     transition: color 0.3s ease;
-    position: relative; 
-    padding-right: 15px; 
+    position: relative;
+    padding-right: 15px;
 }
 
 .timeline-list a:hover {
@@ -219,9 +235,9 @@ h3 {
 
 /* リンクの横に矢印アイコンを追加 */
 .project-list a::after,
-.timeline-list a::after,
-.social-links a::after {
-    content: '→'; /* 矢印文字 */
+.timeline-list a::after{
+    content: '→';
+    /* 矢印文字 */
     position: absolute;
     right: 0;
     top: 50%;
@@ -235,4 +251,14 @@ h3 {
 .timeline-list a:hover::after,
 .social-links a:hover::after {
     opacity: 1;
+}
+
+iframe {
+    position: absolute;
+    top: -5vh;
+    right: 1vw;
+    width: 140vw;
+    height: 27vh;
+    z-index: 1000;
+    background-color: transparent;
 }
