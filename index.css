@@ -262,3 +262,15 @@ iframe {
     z-index: 1000;
     background-color: transparent;
 }
+
+@media (max-width: 600px) {
+    .container {
+        margin-top: 160px;
+    }
+    iframe {
+        top: 0vh;
+        right: 0vw;
+        width: 100vw;
+        height: 30vh;
+    }
+}
