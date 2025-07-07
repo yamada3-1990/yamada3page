@@ -21,24 +21,6 @@
     list-style-type: none;
 }
 
-.radio {
-    display: none;
-}
-
-.radio:checked + .relative label {
-    text-decoration: underline;
-    color: #0a5f51;
-}
-
-.radio:checked + .relative .circle {
-    background: #2D8A7B;
-}
-
-.radio:checked ~ .content {
-    max-height: 500px;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
 
 .relative {
     position: relative;
