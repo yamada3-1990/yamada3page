@@ -112,6 +112,14 @@ h3 {
     width: 55%;
 }
 
+/* 小さなアイコンをスキル名の先頭に表示する */
+.skill-table .iconify {
+    font-size: 1.2rem;
+    vertical-align: -0.15em;
+    margin-right: 10px;
+    color: #333;
+}
+
 @media (max-width: 480px) {
     .skill-table td,
     .skill-table th {
