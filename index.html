@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <title>About Me</title>
+    <!-- Iconify (language icons) -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 
 <body>
@@ -29,22 +31,80 @@
 
         <section class="section">
             <h2>スキル</h2>
-            <div class="skill-grid">
-                <div class="skill-item">Python</div>
-                <div class="skill-item">HTML/CSS</div>
-                <div class="skill-item">C<br>(講義, 1年程)</div>
-                <div class="skill-item">Java<br>(講義, 半年程)</div>
-                <div class="skill-item">Processing<br>(講義, 半年程)</div>
-                <div class="skill-item">Go<br>(半年未満)</div>
-                <div class="skill-item">JavaScript<br>(半年未満)</div>
-                <div class="skill-item">C++<br>(ちょっと)</div>
-                <div class="skill-item">Git/GitHub</div>
-                <div class="skill-item">Spline/Hana</div>
-                <div class="skill-item">Blender</div>
-                <div class="skill-item">Dart<br>(ちょっと)</div>
-                <div class="skill-item">Linux(Ubuntu)<br>(ちょっと)</div>
-                <div class="skill-item">Live2D<br>(ちょっと)</div>
-            </div>
+            <table class="skill-table" aria-label="スキル一覧">
+                <thead>
+                    <tr>
+                        <th>スキル</th>
+                        <th>経験</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:python" data-inline="false" aria-hidden="true"></span> Python</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:c" data-inline="false" aria-hidden="true"></span> C</td>
+                        <td>講義, 1年程</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:java" data-inline="false" aria-hidden="true"></span> Java</td>
+                        <td>講義, 半年程</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:processing" data-inline="false" aria-hidden="true"></span> Processing</td>
+                        <td>講義, 半年程</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:go" data-inline="false" aria-hidden="true"></span> Go</td>
+                        <td>半年未満</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:javascript" data-inline="false" aria-hidden="true"></span> JavaScript</td>
+                        <td>半年未満</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:c-plusplus" data-inline="false" aria-hidden="true"></span> C++</td>
+                        <td>ちょっと</td>
+                    </tr>
+                    <tr>
+                        <td>Spline/Hana</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Blender</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:dart" data-inline="false" aria-hidden="true"></span> Dart</td>
+                        <td>ちょっと</td>
+                    </tr>
+                    <tr>
+                        <td>Live2D</td>
+                        <td>ちょっと</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:laravel" data-inline="false" aria-hidden="true"></span> laravel (PHP)</td>
+                        <td>ちょっと</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:git" data-inline="false" aria-hidden="true"></span> Git/GitHub</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="logos:ubuntu" data-inline="false" aria-hidden="true"></span> Linux (Ubuntu)</td>
+                        <td>ちょっと</td>
+                    </tr>
+                    <tr>
+                        <td><span class="iconify" data-icon="simple-icons:amazonaws" data-inline="false" aria-hidden="true"></span> AWS (S3, RDS, EC2など)</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section class="section">
